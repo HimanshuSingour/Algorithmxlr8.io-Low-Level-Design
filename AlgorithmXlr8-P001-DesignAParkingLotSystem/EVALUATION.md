@@ -12,22 +12,21 @@ _Evaluated on 2026-08-07_
 | Design Patterns | 40/100 |
 | Extensibility | 50/100 |
 | Code Quality | 80/100 |
-| Database Design | 0/100 |
-| Overall (Total) | 54/100 |
+| Overall (Total) | 63/100 |
 
 ## Summary
 
-The candidate has demonstrated a good understanding of the problem requirements and has implemented a functional parking lot system, but there are areas for improvement, particularly in terms of extensibility, separation of concerns, and database design. The candidate should focus on designing a more flexible and scalable system that meets the non-functional requirements.
+The candidate has a good understanding of object-oriented principles and has designed a clear and focused `ParkingSpot` class, but needs to work on breaking down the `ParkingLot` class into smaller, more manageable pieces and extracting separate classes for pricing rules and floor management.
 
 ## Strengths
 
-- The candidate has successfully implemented the `ParkingSpot` class with a `canFit` method that checks if a vehicle can fit in a particular spot, demonstrating a good understanding of the problem requirements.
-- The `Ticket` class is well-designed, storing the vehicle, parking spot, and entry time, which is used to calculate the fee when the vehicle leaves.
-- The `ParkingLot` class has a clear and simple `addSpot` method for adding new parking spots, and the `display` method provides a useful summary of the current state of the parking lot.
+- The `ParkingSpot` class has a clear and focused responsibility, encapsulating the state and behavior of a single parking spot.
+- The `Vehicle` class is simple and effective, providing a clear representation of a vehicle with its type and number.
+- The `Ticket` class is well-designed, capturing the essential information about a vehicle's parking session, including the entry time and spot number.
 
 ## Where to Improve
 
-- The candidate should consider adding more vehicle types and spot sizes without modifying the existing code, as per the non-functional requirements. This could be achieved by using a more flexible data structure, such as a dictionary or a separate class for vehicle types.
-- The pricing rules are currently hardcoded in the `leave` method of the `ParkingLot` class. It would be better to separate this logic into a separate class or method to make it easier to modify or extend in the future.
-- The database design provided does not match the problem requirements. The candidate should design a database schema that includes tables for parking spots, vehicles, and tickets, with relationships between them.
-- The `park` method in the `ParkingLot` class does not handle the case where no spot is available. It would be better to throw an exception or return a specific error message in this case, rather than simply printing a message and returning null.
+- The `ParkingLot` class is doing too much work, including parking, leaving, and displaying free spots. Consider breaking it down into separate classes for each concern.
+- The pricing rules are hardcoded in the `leave` method of the `ParkingLot` class. Consider extracting a separate class or interface for pricing rules to make them more flexible and maintainable.
+- The `ParkingLot` class does not support multiple floors. Consider adding a `Floor` class to represent a single floor with its own spots.
+- The `display` method in the `ParkingLot` class only shows the total number of free spots. Consider adding more detailed information, such as the number of free spots per floor or per spot type.
