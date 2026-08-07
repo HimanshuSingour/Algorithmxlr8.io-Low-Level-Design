@@ -12,24 +12,25 @@ _Evaluated on 2026-08-07_
 | Design Patterns | 40/100 |
 | Extensibility | 50/100 |
 | Code Quality | 70/100 |
-| Explanation | 0/100 |
+| Explanation | 20/100 |
 | Database Design | 0/100 |
 | Architecture Diagram | 0/100 |
-| Overall (Total) | 41/100 |
+| Overall (Total) | 43/100 |
 
 ## Summary
 
-The candidate has a good start with the parking lot system, but needs to work on breaking down the responsibilities into separate classes, extracting pricing rules into a separate class, and designing a database schema and architecture diagram that are specific to the parking lot system.
+The candidate demonstrates a good understanding of object-oriented programming principles and has designed a functional parking lot system, but their written explanation and database design are not relevant to the problem, and their architecture diagram is not readable. To improve, the candidate should focus on providing clear and relevant explanations of their design decisions and ensuring that all aspects of their submission are relevant to the problem at hand.
 
 ## Strengths
 
-- The `ParkingSpot` class encapsulates the logic for determining if a vehicle can fit in a spot, which is a good example of single responsibility principle.
-- The `Vehicle` class is simple and effectively represents a vehicle with a license number and type.
-- The `Ticket` class is well-structured and contains the necessary information for a parking ticket, including the vehicle, spot, and entry time.
+- The candidate's ParkingLot class effectively encapsulates the parking lot's state and behavior, including adding spots, parking vehicles, and displaying free spots.
+- The VehicleType enum and Vehicle class provide a clear and extensible way to represent different types of vehicles.
+- The ParkingSpot class has a clear responsibility for managing its own state, including whether it is occupied and whether a given vehicle can fit in it.
 
 ## Where to Improve
 
-- The `ParkingLot` class is doing too much work, including parking, leaving, and displaying free spots. Consider breaking it down into separate classes for each responsibility.
-- The pricing rules are hardcoded in the `leave` method of the `ParkingLot` class. Consider extracting this logic into a separate class or interface to make it more flexible and maintainable.
-- The database design provided does not seem to be related to the parking lot system. Consider designing a database schema that is specific to the parking lot system, including tables for vehicles, parking spots, and tickets.
-- The architecture diagram is not readable and does not provide any useful information. Consider creating a clear and concise diagram that shows the different components of the system and how they interact with each other.
+- The candidate's written explanation does not clearly explain their approach to the parking lot problem, instead focusing on general lessons learned from software development.
+- The database design provided does not appear to be relevant to the parking lot problem, instead seeming to be a design for a URL shortening service.
+- The architecture diagram is not readable, and the lack of text labels makes it difficult to understand the candidate's design decisions.
+- The candidate's ParkingLot class is responsible for both managing the parking lot's state and calculating the fee for a vehicle's stay, which could be separated into different classes for better extensibility and maintainability.
+- The candidate's code does not handle the case where a vehicle tries to leave without a valid ticket, which could lead to errors or unexpected behavior.
