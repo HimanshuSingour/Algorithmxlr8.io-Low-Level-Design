@@ -35,5 +35,3 @@ See `EVALUATION.md` in this folder for the code-review feedback on this design.
 See `EXPLANATION.md` for the full write-up of the approach.
 
 See `whiteboard.png` for the architecture whiteboard.
-
-See `db-design.png` for the database schema diagram.
