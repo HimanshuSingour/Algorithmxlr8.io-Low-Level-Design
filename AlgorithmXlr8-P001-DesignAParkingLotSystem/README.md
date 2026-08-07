@@ -30,7 +30,7 @@ You're building the parking system for a mall with a few floors. Bikes, cars, an
 
 ---
 
-See `EVALUATION.md` in this folder for the AI code-review feedback on this design.
+See `EVALUATION.md` in this folder for the code-review feedback on this design.
 
 See `EXPLANATION.md` for the full write-up of the approach.
 
