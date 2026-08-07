@@ -1,45 +1,13 @@
 # Explanation — Design a Parking Lot System
 
-Hye can yousf
-dsf
-sd
-f
+Building my own coding project completely changed the way I looked at software engineering. Before starting the project, I believed that software engineering was mostly about writing code and learning programming languages. However, once I started building something from scratch, I realized that coding is only one small part of the entire process. The real challenge is understanding the problem, designing a solution, making the right technical decisions, and continuously improving the application over time.
 
-sd
-f
+In the beginning, I spent a lot of time planning what I wanted to build. I had many ideas, but I quickly learned that having an idea is much easier than turning it into a working product. I had to think about how different parts of the application would communicate with each other, how the database should be designed, how users would interact with the application, and how to keep everything simple and maintainable. Many of my first decisions were not perfect, and I often had to redesign parts of the project after discovering better approaches.
 
-sd
-f
-dsfgreg
-Hye can yousf
-dsf
-sd
-f
+One of the biggest lessons I learned was that bugs are a normal part of software development. There were days when a small issue took hours to fix, even though the actual solution was only a few lines of code. At first, these problems were frustrating, but over time I became more patient. Instead of guessing, I started reading error messages carefully, using debugging tools, and testing different scenarios step by step. Every bug taught me something new, and gradually I became more confident in solving problems on my own.
 
-sd
-f
+As the project grew, I also understood the importance of writing clean and organized code. Initially, I only focused on making the application work. Later, I realized that code should also be easy to read, understand, and modify. I began breaking large files into smaller components, creating reusable functions, and following better coding practices. These small improvements made the project much easier to maintain and helped me understand why experienced software engineers always emphasize clean code.
 
-sd
-f
-dsfgreg
-Hye can yousf
-dsf
-sd
-f
+Another important lesson was learning that software engineering is about continuous improvement. No project is ever truly finished. After completing one feature, I always found another way to improve performance, enhance the user experience, fix edge cases, or simplify the overall design. This mindset taught me that building software is an ongoing journey rather than a one-time task.
 
-sd
-f
-
-sd
-f
-dsfgregHye can yousf
-dsf
-sd
-f
-
-sd
-f
-
-sd
-f
-dsfgreg
+Looking back, this coding project gave me much more than technical knowledge. It improved my problem-solving skills, taught me how to think logically, and helped me become comfortable with making mistakes and learning from them. Most importantly, it showed me that the best way to become a better software engineer is not by only reading books or watching tutorials, but by building real projects, facing real challenges, and improving a little every single day. Every line of code, every bug, and every small success became a valuable learning experience that continues to shape my journey as a software engineer.
