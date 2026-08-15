@@ -1,6 +1,6 @@
 # Evaluation — Design a Parking Lot System
 
-_Evaluated on 2026-08-08_
+_Evaluated on 2026-08-15_
 
 ## Scores
 
@@ -11,22 +11,24 @@ _Evaluated on 2026-08-08_
 | SOLID | 60/100 |
 | Design Patterns | 40/100 |
 | Extensibility | 50/100 |
-| Code Quality | 80/100 |
-| Overall (Total) | 63/100 |
+| Code Quality | 70/100 |
+| Overall (Total) | 62/100 |
 
 ## Summary
 
-The candidate has a good start on the parking lot system, but needs to work on breaking down the responsibilities of the `ParkingLot` class and adding support for multiple floors. Additionally, the pricing rules should be extracted into a separate class or method to make it easier to change or extend.
+The candidate's submission demonstrates a good understanding of the problem domain and basic object-oriented principles, but could benefit from further refinement and separation of concerns to improve modularity, maintainability, and extensibility.
 
 ## Strengths
 
-- The `ParkingSpot` class encapsulates the logic for determining if a vehicle can fit in a spot, which is a good application of encapsulation.
-- The `Vehicle` class is simple and effectively represents a vehicle with a license number and type.
-- The `Ticket` class is well-structured and contains the necessary information for a parking ticket, including the vehicle, spot, and entry time.
+- The `ParkingSpot` class has a clear and focused responsibility, encapsulating the state and behavior of a parking spot, including its type and occupancy status.
+- The `Vehicle` class is simple and effective, providing a clear representation of a vehicle with its number and type.
+- The `Ticket` class is well-designed, capturing the essential information about a vehicle's parking session, including the vehicle, spot, and entry time.
+- The `ParkingLot` class provides a basic implementation of a parking lot, allowing vehicles to park and leave, and displaying the number of free spots.
 
 ## Where to Improve
 
-- The `ParkingLot` class is doing too much work, including parking, leaving, and displaying free spots. Consider breaking this down into separate classes or methods for each responsibility.
-- The pricing rules are hardcoded in the `leave` method of the `ParkingLot` class. Consider extracting this into a separate class or method to make it easier to change or extend.
-- There is no support for multiple floors in the current implementation. Consider adding a `Floor` class to represent each floor and its associated parking spots.
-- The `display` method in the `ParkingLot` class only shows the total number of free spots, but does not provide any information about the number of free spots on each floor. Consider modifying this method to provide more detailed information.
+- The `ParkingLot` class should be separated into multiple classes, each responsible for a specific concern, such as floor management, spot assignment, and billing, to improve modularity and maintainability.
+- The pricing rules should be extracted into a separate class or mechanism, allowing for easier modification and extension without touching the existing code.
+- The `ParkingSpot` class should be extended to support multiple floors, with each floor having its own set of spots, to better model the real-world scenario.
+- The `VehicleType` enum should be used more consistently throughout the code, avoiding magic numbers and strings, to improve readability and maintainability.
+- The `leave` method in the `ParkingLot` class should be improved to handle cases where the ticket is null or invalid, to prevent potential errors and exceptions.
